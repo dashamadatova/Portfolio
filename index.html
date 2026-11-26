@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Puppy Room Runner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wrap"><img class="hero-pup" data-art="p0" alt="The puppy"><h1>Puppy Room Runner</h1><p>A cheerful endless runner: dash through the living room and jump over the stools for as long as you can.</p><a class="btn" href="#play">Play now</a></header>
+<section id="play" class="wrap"><div id="game-container"><div id="hud"><div>Puppy Room Runner</div><div id="score-panel"><span>Score: <strong id="score">0</strong></span><span>Best: <strong id="best">0</strong></span></div></div>
+<canvas id="game" width="1100" height="620"></canvas>
+<div id="instructions">Press <strong>SPACE</strong>, <strong>↑</strong> or <strong>W</strong> to jump • Click or tap to jump</div></div></section>
+<section class="wrap"><h2>How to play</h2><div class="grid">
+<div class="card"><span class="num">1</span><h3>Start</h3><p>Press Space or click the game to begin. The puppy starts running on its own.</p></div>
+<div class="card"><span class="num">2</span><h3>Jump</h3><p>Use Space, ↑, W, a click or a tap to jump over each stool that slides toward you.</p></div>
+<div class="card"><span class="num">3</span><h3>Survive</h3><p>Your score rises the longer you run. Touch a stool and it’s game over.</p></div>
+<div class="card"><span class="num">4</span><h3>Try again</h3><p>After a short pause, jump again to restart and beat your best score.</p></div></div></section>
+<section class="wrap"><h2>Game mechanics</h2><table>
+<tr><th>Mechanic</th><th>How it works</th></tr>
+<tr><td>Running speed</td><td>Starts at 250 px/s and keeps climbing as you survive.</td></tr>
+<tr><td>Jump</td><td>One jump rises about 245 px and hangs in the air for roughly 1 second. You can’t jump again mid-air.</td></tr>
+<tr><td>Obstacles</td><td>Stools (95 × 105 px) spawn off-screen on the right and slide left toward the puppy.</td></tr>
+<tr><td>Collision</td><td>A slightly forgiving hitbox: only a real hit ends the run.</td></tr>
+<tr><td>Score &amp; best</td><td>Score grows with time survived; your best score is remembered in this browser.</td></tr>
+<tr><td>Animation</td><td>The puppy glides across the floor and leaps into the air on every jump.</td></tr></table></section>
+<section class="wrap"><h2>Characters &amp; objects</h2><div class="grid">
+<div class="card"><div class="pic"><img data-art="p0" alt="The puppy, a cartoon golden dog with a red collar"></div><h3>The Puppy</h3><p>Our hero: a fast, friendly runner wearing a bright red collar.</p></div>
+<div class="card"><div class="pic"><img data-art="stool" alt="Wooden stool"></div><h3>The Stool</h3><p>The only obstacle. Time your jump to clear it.</p></div>
+<div class="card span2"><div class="pic wide"><img data-art="room" alt="Living room background"></div><h3>The Living Room</h3><p>A cozy scrolling background that moves slower than the floor for a sense of depth.</p></div></div></section>
+<footer class="wrap">Made with HTML, CSS and JavaScript • Puppy Room Runner</footer>
+<script src="script.js"></script>
+</body>
+</html>
