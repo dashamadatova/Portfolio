@@ -1,8 +1,8 @@
 // Image paths (all files live in the "images" folder)
 const ART = {
-  puppy: ["images/puppy.png", "images/puppy.png", "images/puppy.png", "images/puppy.png"],
-  stool: "images/stool.png",
-  room: "images/living_room.jpg",
+  puppy: ["https://i.postimg.cc/25pXkp8t/puppy.png", "https://i.postimg.cc/25pXkp8t/puppy.png", "https://i.postimg.cc/25pXkp8t/puppy.png", "https://i.postimg.cc/25pXkp8t/puppy.png"],
+  stool: "https://i.postimg.cc/8PJHjy3Q/stool.png",
+  room: "https://i.postimg.cc/XJYK3xFR/living-room.png",
 };
 
 // Fill the website pictures that use data-art="..."
@@ -49,11 +49,11 @@ stoolImage.src = ART.stool;
 
 // Main title art
 const titleArt = new Image();
-titleArt.src = "game_title_art.png";
+titleArt.src = "https://i.postimg.cc/k4GSLG3Y/game-title-art.png";
 
 // Game over sign artwork
 const gameOverSignArt = new Image();
-gameOverSignArt.src = "game_over_sign_art.png";
+gameOverSignArt.src = "https://i.postimg.cc/J0J5d0jG/game-over-sign-art.png";
 // ------------------------------------------------------------
 // NEW INTRO ART
 // Contains:
@@ -62,7 +62,7 @@ gameOverSignArt.src = "game_over_sign_art.png";
 // ------------------------------------------------------------
 
 const subscriptArt = new Image();
-subscriptArt.src = "game_subscript_art.png";
+subscriptArt.src = "https://i.postimg.cc/Rq5n3T32/game-subscript-art.png";
 
 // ------------------------------------------------------------
 // BACKGROUND MUSIC
